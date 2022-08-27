@@ -16,6 +16,8 @@
 
 ## Game tutorials
 
+[SFML and Linux](https://www.sfml-dev.org/tutorials/2.5/start-linux.php)
+[Creating a City Building Game with SFML](https://www.binpress.com/creating-city-building-game-with-sfml/)
 [Customizing or porting game engines](https://developer.android.com/games/develop/custom/overview)
 [How to Make Your Own C++ Game Engine](https://www.gamedeveloper.com/blogs/how-to-make-your-own-c-game-engine)
 [Game Development with C++](https://docs.microsoft.com/en-us/cpp/overview/game-development-cpp?view=msvc-170)

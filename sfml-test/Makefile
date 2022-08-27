@@ -7,14 +7,20 @@ CC = g++
 # compiler flags:
 #  -g     - this flag adds debugging information to the executable file
 #  -Wall  - this flag is used to turn on most compiler warnings
-CFLAGS  = -g -Wall
+CFLAGS  = -g -Wall -lsfml-graphics -lsfml-window -lsfml-system
 # The build target 
-TARGET = cargame
+TARGET = sfmltest
 
 all: $(TARGET)
 
 $(TARGET): $(TARGET).cpp
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cpp
+	$(CC) -c ./$(TARGET).cpp
+	$(CC) $(TARGET).o -o $(TARGET) $(CFLAGS) 
+
+fullscreen: fullscreen.cpp
+	$(CC) -c ./fullscreen.cpp
+	$(CC) fullscreen.o -o fullscreen $(CFLAGS) 
 
 clean:
-	$(RM) $(TARGET)
+	$(RM) $(TARGET) $(TARGET).o
+	$(RM) fullscreen fullscreen.o
